@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#0c0a08</color>
+    <color name="primary_orange">#FA4200</color>
+    <color name="primary_light">#FF7733</color>
+    <color name="surface_card">#161311</color>
+    <color name="border_glass">#28231e</color>
+    <color name="status_live">#10b981</color>
+    <color name="text_main">#f9fafb</color>
+    <color name="text_muted">#9ca3af</color>
+</resources>

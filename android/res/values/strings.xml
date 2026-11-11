@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Client Hunter</string>
+    <string name="title_reconnect">Reconectar ao Servidor</string>
+    <string name="desc_connecting">Conectando ao Client Hunter Engine...</string>
+    <string name="error_connection">Não foi possível conectar ao servidor.</string>
+</resources>

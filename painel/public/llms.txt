@@ -1,0 +1,42 @@
+# Client Hunter PRO — Documentação para Agentes de IA
+
+> Plataforma B2B autônoma de prospecção multi-canal, enriquecimento forense com Business Intelligence e automação de cold outreach em escala.
+> Desenvolvida para ser operada programmaticamente por Agentes de IA (Google Antigravity, Claude Code, Cursor, Codex, LangChain, CrewAI).
+
+## Especificações Rápidas
+- **Versão:** 2.0.0
+- **Servidor MCP:** `mcp/leadpulse-mcp.mjs` (Stdio, JSON-RPC 2.0, 24 Ferramentas Registradas)
+- **API Spec (JSON):** `/api/ai/spec`
+- **Documentação Completa de Agente:** `/llms-full.txt`
+- **Banco de Dados:** SQLite local (`data/prospeccao.db`) com transações ACID e deduplicação idempotente.
+- **SuperPool Ativo:** 58 API Keys rotativas (13 contas Apify, 9 contas Exa AI, Firecrawl, Resend).
+
+## Canais de Coleta Suportados
+- **Google Maps:** Mineração via Botasaurus nativo (R$ 0) ou Apify rotativo. Extrai nome, categoria, endereço, telefone, site, nota e contagem de reviews.
+- **LinkedIn:** Captação de páginas corporativas e mapeamento de C-Levels, diretores e sócios fundadores.
+- **Instagram:** Extração de perfis comerciais, bio com link de WhatsApp e contagem de seguidores.
+- **Web B2B:** Descoberta com Exa Neural Search + Firecrawl Deep Scraper.
+
+## Ferramentas MCP Principais (leadpulse_*)
+- `leadpulse_coletar_leads(canal, nicho, praca, limite)`: Coleta e salva leads multi-canal.
+- `leadpulse_buscar_empresas(query, limite, motor)`: Busca no Google Maps.
+- `leadpulse_buscar_linkedin(nicho, praca, limite, tipo)`: Busca decisores e empresas no LinkedIn.
+- `leadpulse_enriquecer_site(url)`: Extrai WhatsApp, e-mails corporativos e pixels do site.
+- `leadpulse_enriquecer_bi(lead_id, forcar)`: Roda auditoria de Tech Stack, busca decisores no LinkedIn e gera dossiê de abordagem.
+- `leadpulse_consultar_bi_dossier(lead_id)`: Recupera o dossiê executivo para montagem de pitches.
+- `leadpulse_sendportal_criar_campanha(nome, assunto, template_id)`: Cria campanha de Cold Mail.
+- `leadpulse_sendportal_disparar_campanha(campanha_id)`: Dispara e-mails com tracking de abertura/clique.
+- `leadpulse_sendportal_enviar_email_rapido(lead_id, assunto)`: Envia e-mail 1-on-1 ultra personalizado.
+
+## Principais Endpoints HTTP (REST)
+- `POST /api/prospeccao/captar`: Inicia mineração multi-canal.
+  - Body: `{"canal":"maps","nicho":"clinicas","praca":"São Paulo SP","limite":10}`
+- `GET /api/prospeccao/leads`: Consulta CRM de leads filtrados.
+  - Query: `?nicho=...&classe=A&canal=maps`
+- `POST /api/prospeccao/enriquecer-bi`: Dispara enriquecimento executivo.
+  - Body: `{"lead_id":"maps:..."}`
+- `POST /api/sendportal/email-rapido`: Disparo pontual para um lead.
+  - Body: `{"lead_id":"...","assunto":"Oportunidade Comercial"}`
+- `GET /api/ai/spec`: Retorna schemas JSON de todas as ferramentas e endpoints.
+
+Para instruções completas e payloads JSON detalhados, leia `/llms-full.txt`.

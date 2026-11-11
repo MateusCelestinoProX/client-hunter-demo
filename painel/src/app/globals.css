@@ -1,0 +1,427 @@
+@import "tailwindcss";
+
+/* ==============================================================================
+   Client Hunter · Ultra Light Translucent Crystal Glass Design System
+   Inspirado no MCP OS · Liquid Glass Apple Glassmorphism · WebGL Shaders Engine
+   ============================================================================== */
+
+:root {
+  color-scheme: dark;
+  --accent-primary: #FA4200;
+  --accent-hover: #FF5511;
+  --accent-secondary: #FF7733;
+  --accent-secondary-hover: #FF8F55;
+  --accent-gradient: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  --accent-rgb: 250, 66, 0;
+  --accent-secondary-rgb: 255, 119, 51;
+  --color-destaque: #FA4200;
+  --color-destaque-hover: #FF5511;
+  --color-secundaria: #FF7733;
+  --color-secundaria-hover: #FF8F55;
+  --color-amber-300: var(--accent-secondary-hover, #FF8F55);
+  --color-amber-400: var(--accent-secondary, #FF7733);
+  --color-amber-500: var(--accent-primary, #FA4200);
+  --color-orange-400: var(--accent-secondary, #FF7733);
+  --color-orange-500: var(--accent-primary, #FA4200);
+}
+
+@theme inline {
+  --color-destaque: var(--accent-primary, #FA4200);
+  --color-destaque-hover: var(--accent-hover, #FF5511);
+  --color-secundaria: var(--accent-secondary, #FF7733);
+  --color-secundaria-hover: var(--accent-secondary-hover, #FF8F55);
+  --color-amber-300: var(--accent-secondary-hover, #FF8F55);
+  --color-amber-400: var(--accent-secondary, #FF7733);
+  --color-amber-500: var(--accent-primary, #FA4200);
+  --color-orange-400: var(--accent-secondary, #FF7733);
+  --color-orange-500: var(--accent-primary, #FA4200);
+  --color-fundo: #080a0f;
+  --color-texto: #FFFFFF;
+  --color-apagado: #A3A3A3;
+
+  --color-superficie: rgba(255, 255, 255, 0.08);
+  --color-card: rgba(255, 255, 255, 0.08);
+  --color-borda: rgba(255, 255, 255, 0.16);
+  --color-borda-forte: rgba(255, 255, 255, 0.28);
+
+  --font-titulo: var(--font-display), -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  --font-corpo: var(--font-body), -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+}
+
+/* --- Base HTML & Body --- */
+html, body {
+  background-color: #080a0f !important;
+  color: var(--color-texto);
+  font-family: var(--font-corpo);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow-x: hidden;
+  color-scheme: dark;
+}
+
+@media (min-width: 768px) {
+  html, body {
+    height: 100vh !important;
+    overflow: hidden !important;
+  }
+}
+
+/* --- MCP OS Background Engine Layers (Layer 0 e 1) --- */
+#bg-container {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  background-color: #080a0f !important;
+}
+
+.bg-slide {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  opacity: 0;
+  transition: opacity 1.6s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  will-change: opacity;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+
+.bg-slide.active {
+  opacity: 1 !important;
+}
+
+#bg-webgl-container {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+  background: transparent !important;
+}
+
+#bg-webgl-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  pointer-events: none !important;
+}
+
+/* Vignette Apple Glass (Layer 1) - Ultra Leve & Transparente para destacar Shaders */
+#bg-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+  background: radial-gradient(ellipse at 50% 50%, transparent 65%, rgba(0, 0, 0, 0.20) 100%) !important;
+}
+
+/* --- Tipografia & Títulos --- */
+h1, h2, h3, .titulo {
+  font-family: var(--font-titulo);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Scrollbars Elegantes --- */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.1); }
+::-webkit-scrollbar-thumb { 
+  background: rgba(255, 255, 255, 0.16); 
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-destaque); }
+
+/* --- Liquid Glass Apple Glassmorphism Classes --- */
+
+/* Cartões de Cristal Líquido Claro & Transparente Apple Glassmorphism */
+.cartao, .glass-card {
+  position: relative !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.10) 0%, rgba(14, 18, 28, 0.35) 100%) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.30) !important;
+  border-radius: 20px !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden;
+}
+
+/* Shimmer especular Apple no topo de cartões */
+.cartao::before, .glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.60), rgba(var(--accent-rgb), 0.5), transparent);
+  pointer-events: none;
+  border-radius: 999px;
+  z-index: 10;
+}
+
+.cartao:hover, .glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.28) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.40), inset 0 1px 0 rgba(255, 255, 255, 0.40) !important;
+}
+
+/* Sidebar Liquid Glass Apple */
+.sidebar-liquid-glass {
+  background: rgba(14, 18, 28, 0.45) !important;
+  backdrop-filter: blur(36px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(36px) saturate(200%) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.16) !important;
+  box-shadow: 10px 0 45px rgba(0, 0, 0, 0.35) !important;
+}
+
+/* Barra Flutuante de Ações em Lote (Liquid Glass) */
+.barra-flutuante-glass {
+  background: rgba(14, 18, 28, 0.52) !important;
+  backdrop-filter: blur(36px) saturate(210%) !important;
+  -webkit-backdrop-filter: blur(36px) saturate(210%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.50), inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
+  border-radius: 24px !important;
+}
+
+/* Tabela de Cristal Apple */
+table thead tr {
+  background: rgba(14, 18, 28, 0.48) !important;
+  backdrop-filter: blur(28px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(180%) !important;
+}
+
+table tbody tr {
+  transition: background 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.07) !important;
+}
+
+/* Campos de Formulário Apple Glass */
+.campo {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08) !important;
+  backdrop-filter: blur(18px) saturate(170%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(170%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 10px !important;
+  padding: 10px 14px !important;
+  font-size: 13px !important;
+  color: #FFFFFF !important;
+  outline: none !important;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35) !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.campo:focus {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(var(--accent-rgb), 0.85) !important;
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb), 0.30), inset 0 1px 2px rgba(0, 0, 0, 0.35) !important;
+}
+
+.campo::placeholder {
+  color: rgba(255, 255, 255, 0.45) !important;
+}
+
+.campo:disabled {
+  opacity: 0.5 !important;
+}
+
+.rotulo {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 6px;
+}
+
+/* Color Picker Input Reset */
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+  border-radius: 8px;
+}
+input[type="color"]::-webkit-color-swatch {
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 8px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+input[type="color"]::-moz-color-swatch {
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 8px;
+}
+
+/* Botões com Brilho Especular Apple */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btn-primario {
+  background: var(--accent-gradient) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 4px 16px rgba(var(--accent-rgb), 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.30) !important;
+}
+
+.btn-primario:hover:not(:disabled) {
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(var(--accent-rgb), 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.40) !important;
+}
+
+.btn-secundario {
+  background: var(--accent-secondary) !important;
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 4px 16px rgba(var(--accent-secondary-rgb), 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.30) !important;
+}
+
+.btn-secundario:hover:not(:disabled) {
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 22px rgba(var(--accent-secondary-rgb), 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.40) !important;
+}
+
+.btn-outline {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(16px) !important;
+  color: var(--color-destaque) !important;
+  border: 1px solid rgba(var(--accent-rgb), 0.4) !important;
+}
+
+.btn-outline:hover:not(:disabled) {
+  background: rgba(var(--accent-rgb), 0.15) !important;
+  border-color: rgba(var(--accent-rgb), 0.7) !important;
+}
+
+.btn-neutro {
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(16px) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+}
+
+.btn-neutro:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.10) !important;
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  color: #FFFFFF !important;
+}
+
+.acento { width: 48px; height: 3px; background: var(--color-destaque); border-radius: 999px; }
+
+/* Animações e Efeitos Fluidos de Vidro Líquido */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.glass-glow {
+  box-shadow: 0 0 25px rgba(var(--accent-rgb), 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.30) !important;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* --- Cascade Entrance Animations for Demo Showcase --- */
+@keyframes cascadeTopBar {
+  0% {
+    opacity: 0;
+    transform: translateY(-24px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes cascadeSidebar {
+  0% {
+    opacity: 0;
+    transform: translateX(-36px);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes cascadeMain {
+  0% {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.demo-cascade-top {
+  animation: cascadeTopBar 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.demo-cascade-sidebar {
+  animation: cascadeSidebar 0.95s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.demo-cascade-main {
+  animation: cascadeMain 1.05s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

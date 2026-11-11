@@ -1,0 +1,1358 @@
+{
+  "android/assets/www/mcp-os/mcp-os-galleries.js": {
+    "mtime": 1794411235.0161624,
+    "seen": 1794412674.8341079,
+    "ast_hash": "673efd5c3bea5cd6a99e2c699021a4f7",
+    "semantic_hash": ""
+  },
+  "android/assets/www/mcp-os/mcp-os-theme-manager.js": {
+    "mtime": 1794411235.0146601,
+    "seen": 1794412674.834112,
+    "ast_hash": "5655d630e7998929b0ab2db4d475b94e",
+    "semantic_hash": ""
+  },
+  "android/assets/www/mcp-os/mcp-os-webgl.js": {
+    "mtime": 1794411235.016688,
+    "seen": 1794412674.8341131,
+    "ast_hash": "72f4c7e64195e1a540b429c72c74544e",
+    "semantic_hash": ""
+  },
+  "android/assets/www/mcp-os/ogl.js": {
+    "mtime": 1794411235.0150645,
+    "seen": 1794412674.834114,
+    "ast_hash": "2053a58c70590e81b8c60af3390458db",
+    "semantic_hash": ""
+  },
+  "android/assets/www/mcp-os/three.min.js": {
+    "mtime": 1794411235.0157065,
+    "seen": 1794412674.834115,
+    "ast_hash": "eb8549863a97355411c3259a3f93b8e1",
+    "semantic_hash": ""
+  },
+  "android/build_apk.sh": {
+    "mtime": 1794411235.0118036,
+    "seen": 1794412674.834116,
+    "ast_hash": "f0e64b8d276ada5261bc54d4ee9bdefa",
+    "semantic_hash": ""
+  },
+  "android/generate_icons.py": {
+    "mtime": 1794411235.0120332,
+    "seen": 1794412674.834116,
+    "ast_hash": "dc8e6f96c8aef1dff505c8592952d10d",
+    "semantic_hash": ""
+  },
+  "android/install_apk.sh": {
+    "mtime": 1794411235.0137122,
+    "seen": 1794412674.8341172,
+    "ast_hash": "07d8e9c56c9bb2cb19a13e91fb723741",
+    "semantic_hash": ""
+  },
+  "android/src/com/mateuscelestino/clienthunter/MainActivity.java": {
+    "mtime": 1794411235.0180016,
+    "seen": 1794412674.834118,
+    "ast_hash": "9546a3c3b8e1532558a8f808e3f00238",
+    "semantic_hash": ""
+  },
+  "lib/aderencia.mjs": {
+    "mtime": 1794411235.0227768,
+    "seen": 1794412674.834118,
+    "ast_hash": "2eb057cafa22d1d227a77ce3bbf094cc",
+    "semantic_hash": ""
+  },
+  "lib/anuncios.mjs": {
+    "mtime": 1794411235.0213914,
+    "seen": 1794412674.8341188,
+    "ast_hash": "1d7bad1b03058259531d983faa6cd489",
+    "semantic_hash": ""
+  },
+  "lib/bi_enrichment.mjs": {
+    "mtime": 1794411235.0225713,
+    "seen": 1794412674.83412,
+    "ast_hash": "842041a29fb9b07ac32320f13b5a9f74",
+    "semantic_hash": ""
+  },
+  "lib/canais.mjs": {
+    "mtime": 1794411235.019906,
+    "seen": 1794412674.834121,
+    "ast_hash": "3926f4b185b70fd2cbf8e96197ecd710",
+    "semantic_hash": ""
+  },
+  "lib/cnpj.mjs": {
+    "mtime": 1794411235.019696,
+    "seen": 1794412674.834121,
+    "ast_hash": "bc355ec1c1ae677f84d6ad9b739dec3a",
+    "semantic_hash": ""
+  },
+  "lib/coleta.mjs": {
+    "mtime": 1794411235.0222392,
+    "seen": 1794412674.834122,
+    "ast_hash": "aaab1d214073126ddb2b841c9a752e34",
+    "semantic_hash": ""
+  },
+  "lib/db.mjs": {
+    "mtime": 1794411235.0194757,
+    "seen": 1794412674.834123,
+    "ast_hash": "194871cbf7bdfd3f741fe58c78257554",
+    "semantic_hash": ""
+  },
+  "lib/env.mjs": {
+    "mtime": 1794411235.0274796,
+    "seen": 1794412674.834123,
+    "ast_hash": "f133e5eb6f14f43c411cb7969304788f",
+    "semantic_hash": ""
+  },
+  "lib/ia.mjs": {
+    "mtime": 1794411235.0218213,
+    "seen": 1794412674.834124,
+    "ast_hash": "1cbc9a2d910802abc35a6c3266d2eb5e",
+    "semantic_hash": ""
+  },
+  "lib/instagram.mjs": {
+    "mtime": 1794411235.0268157,
+    "seen": 1794412674.834125,
+    "ast_hash": "4d39b59db7b3e1c5e824166eb28f285b",
+    "semantic_hash": ""
+  },
+  "lib/local_db.mjs": {
+    "mtime": 1794411235.0211563,
+    "seen": 1794412674.834125,
+    "ast_hash": "44813863b4322e5c284bd067b2409387",
+    "semantic_hash": ""
+  },
+  "lib/marketing.mjs": {
+    "mtime": 1794411235.021604,
+    "seen": 1794412674.834126,
+    "ast_hash": "e2e50c6dc6bfc3222cbe69709772e0ca",
+    "semantic_hash": ""
+  },
+  "lib/nome.mjs": {
+    "mtime": 1794411235.0263767,
+    "seen": 1794412674.8341272,
+    "ast_hash": "3eb4d015061d4ca91ad5a78bc56da0e1",
+    "semantic_hash": ""
+  },
+  "lib/pesquisa.mjs": {
+    "mtime": 1794411235.0271552,
+    "seen": 1794412674.8341272,
+    "ast_hash": "dccfdfa26a6bd92297865030d134e9fa",
+    "semantic_hash": ""
+  },
+  "lib/places.mjs": {
+    "mtime": 1794411235.0220346,
+    "seen": 1794412674.834128,
+    "ast_hash": "2f19850813cc411d92d7f1f5946e3efc",
+    "semantic_hash": ""
+  },
+  "lib/requisitos.mjs": {
+    "mtime": 1794411235.0265923,
+    "seen": 1794412674.8341289,
+    "ast_hash": "e5e657041a3ea9e63cbac024f9cd9c1b",
+    "semantic_hash": ""
+  },
+  "lib/score.mjs": {
+    "mtime": 1794411235.0202622,
+    "seen": 1794412674.8341289,
+    "ast_hash": "abc433defe9a4f57ff1573a333ba2128",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/campanhas.mjs": {
+    "mtime": 1794411235.0235975,
+    "seen": 1794412674.8341298,
+    "ast_hash": "51f61136f31b2ef60d1c09d36fe5071b",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/cli.mjs": {
+    "mtime": 1794411235.026168,
+    "seen": 1794412674.834131,
+    "ast_hash": "55db1cf07684a40abad482d6260ee681",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/despacho.mjs": {
+    "mtime": 1794411235.0243037,
+    "seen": 1794412674.834131,
+    "ast_hash": "b237a39aefcdea7310e26b209dd171b3",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/email_rapido.mjs": {
+    "mtime": 1794411235.0238078,
+    "seen": 1794412674.834132,
+    "ast_hash": "c7f0f4da522028ae4ea259b19fbb9555",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/index.mjs": {
+    "mtime": 1794411235.0254107,
+    "seen": 1794412674.834133,
+    "ast_hash": "36e564962d175bf7ef7922c05b466c5d",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/inscritos.mjs": {
+    "mtime": 1794411235.02452,
+    "seen": 1794412674.834133,
+    "ast_hash": "f82e2d5d37d2ff56dea1415f812d4809",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/mensagens.mjs": {
+    "mtime": 1794411235.0249128,
+    "seen": 1794412674.834134,
+    "ast_hash": "3453bae6262333b7954f0ad750a3988d",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/tags.mjs": {
+    "mtime": 1794411235.0240953,
+    "seen": 1794412674.834135,
+    "ast_hash": "8d851876bb71f830a3dd238fed202434",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/templates.mjs": {
+    "mtime": 1794411235.025717,
+    "seen": 1794412674.834135,
+    "ast_hash": "29b2195338772153b1d868cd268df541",
+    "semantic_hash": ""
+  },
+  "lib/sendportal/tracking.mjs": {
+    "mtime": 1794411235.0259488,
+    "seen": 1794412674.834136,
+    "ast_hash": "62ebb8db9067bc5358bae158e229ef1f",
+    "semantic_hash": ""
+  },
+  "lib/site.mjs": {
+    "mtime": 1794411235.0232043,
+    "seen": 1794412674.8341372,
+    "ast_hash": "4be1014494cc6d165c82ce85160bcec7",
+    "semantic_hash": ""
+  },
+  "lib/superpool.mjs": {
+    "mtime": 1794411235.0229936,
+    "seen": 1794412674.8341372,
+    "ast_hash": "ebad26489d305af841e33cbb52163eab",
+    "semantic_hash": ""
+  },
+  "mcp/leadpulse-mcp.mjs": {
+    "mtime": 1794411234.8901215,
+    "seen": 1794412674.8341382,
+    "ast_hash": "9cac2da6195249d43ad3b095b59f8dc5",
+    "semantic_hash": ""
+  },
+  "motores/gmaps/gmaps_botasaurus.py": {
+    "mtime": 1794411235.003348,
+    "seen": 1794412674.8341382,
+    "ast_hash": "5fa09f7eeb3942248e89929a4f1d311f",
+    "semantic_hash": ""
+  },
+  "motores/instagram/instagram_lead_scraper.mjs": {
+    "mtime": 1794411235.0040922,
+    "seen": 1794412674.8341389,
+    "ast_hash": "738e35b7d9dde5c4d605871c4936d24f",
+    "semantic_hash": ""
+  },
+  "motores/linkedin/linkedin_scraper.mjs": {
+    "mtime": 1794411235.0044696,
+    "seen": 1794412674.8341398,
+    "ast_hash": "bb423b025021ab04b76707f005e59734",
+    "semantic_hash": ""
+  },
+  "motores/web/web_scraper.mjs": {
+    "mtime": 1794411235.002973,
+    "seen": 1794412674.8341398,
+    "ast_hash": "40028d832f0eadee98aadde5aacd3627",
+    "semantic_hash": ""
+  },
+  "nichos/clinica-odontologica.json": {
+    "mtime": 1794411234.8836253,
+    "seen": 1794412674.834141,
+    "ast_hash": "ee5f3498d6b4d1a367d9684144be9b92",
+    "semantic_hash": ""
+  },
+  "nichos/energia-solar.json": {
+    "mtime": 1794411234.8829582,
+    "seen": 1794412674.834142,
+    "ast_hash": "acd87b590183e272e0de382f5ddfbb5b",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1794411235.0052214,
+    "seen": 1794412674.834143,
+    "ast_hash": "b5bd7d9881644ebb757a60dfd65afafa",
+    "semantic_hash": ""
+  },
+  "painel/next.config.ts": {
+    "mtime": 1794411235.133233,
+    "seen": 1794412674.834143,
+    "ast_hash": "106f6aca321380462d80665e311c62eb",
+    "semantic_hash": ""
+  },
+  "painel/package.json": {
+    "mtime": 1794411235.132807,
+    "seen": 1794412674.834144,
+    "ast_hash": "9c2e7c09b705aa60fe0385a679347b96",
+    "semantic_hash": ""
+  },
+  "painel/postcss.config.mjs": {
+    "mtime": 1794411235.0530744,
+    "seen": 1794412674.834145,
+    "ast_hash": "2077692efeb6700dfe6ba644fb544790",
+    "semantic_hash": ""
+  },
+  "painel/public/assets/vendor/three.min.js": {
+    "mtime": 1794411235.1320686,
+    "seen": 1794412674.834145,
+    "ast_hash": "eb8549863a97355411c3259a3f93b8e1",
+    "semantic_hash": ""
+  },
+  "painel/public/mcp-os/mcp-os-galleries.js": {
+    "mtime": 1794411235.055556,
+    "seen": 1794412674.834146,
+    "ast_hash": "673efd5c3bea5cd6a99e2c699021a4f7",
+    "semantic_hash": ""
+  },
+  "painel/public/mcp-os/mcp-os-theme-manager.js": {
+    "mtime": 1794411235.054182,
+    "seen": 1794412674.834146,
+    "ast_hash": "5655d630e7998929b0ab2db4d475b94e",
+    "semantic_hash": ""
+  },
+  "painel/public/mcp-os/mcp-os-webgl.js": {
+    "mtime": 1794411235.0560482,
+    "seen": 1794412674.834147,
+    "ast_hash": "72f4c7e64195e1a540b429c72c74544e",
+    "semantic_hash": ""
+  },
+  "painel/public/mcp-os/ogl.js": {
+    "mtime": 1794411235.054567,
+    "seen": 1794412674.8341482,
+    "ast_hash": "2053a58c70590e81b8c60af3390458db",
+    "semantic_hash": ""
+  },
+  "painel/public/mcp-os/three.min.js": {
+    "mtime": 1794411235.0551963,
+    "seen": 1794412674.8341482,
+    "ast_hash": "eb8549863a97355411c3259a3f93b8e1",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/ai/spec/route.ts": {
+    "mtime": 1794411235.1466901,
+    "seen": 1794412674.8341491,
+    "ast_hash": "eb3c7ba36386b3ba2bf9a27dbdf0bca5",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/pool/resources/route.ts": {
+    "mtime": 1794412291.5240667,
+    "seen": 1794412674.8341498,
+    "ast_hash": "98c0b8864724326f6148f112c0675bc4",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/prospeccao/captar/route.ts": {
+    "mtime": 1794412094.0765383,
+    "seen": 1794412674.8341498,
+    "ast_hash": "725deb1e05923dd652b48b2ba42e10a2",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/prospeccao/enriquecer-bi/route.ts": {
+    "mtime": 1794412121.503306,
+    "seen": 1794412674.834151,
+    "ast_hash": "989712676e77f9a5a415a8d9afc88ef0",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/prospeccao/leads/route.ts": {
+    "mtime": 1794411235.1476023,
+    "seen": 1794412674.834152,
+    "ast_hash": "355f60ffce524573e3ca2ae7efa3d091",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/sendportal/campanhas/[id]/disparar/route.ts": {
+    "mtime": 1794412167.087841,
+    "seen": 1794412674.834152,
+    "ast_hash": "1ebf45dcf5616a4f7be6480137fc5d74",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/sendportal/campanhas/disparar/route.ts": {
+    "mtime": 1794412136.0794237,
+    "seen": 1794412674.834153,
+    "ast_hash": "6ad46ed0e39678c3581b48048c64c3a5",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/sendportal/campanhas/route.ts": {
+    "mtime": 1794412274.3193588,
+    "seen": 1794412674.834153,
+    "ast_hash": "73afbdc1c3911bb52a9d59ffa0791385",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/sendportal/email-rapido/route.ts": {
+    "mtime": 1794412249.9653666,
+    "seen": 1794412674.834154,
+    "ast_hash": "c906a0af2fbddea373cf6f6f497c213b",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/sendportal/status/route.ts": {
+    "mtime": 1794411235.1456769,
+    "seen": 1794412674.834155,
+    "ast_hash": "5726c1485732cc4d8edee230d42daeeb",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/sendportal/sync/route.ts": {
+    "mtime": 1794412227.9904401,
+    "seen": 1794412674.834155,
+    "ast_hash": "dafb24b55d467414c5df5bd99807d753",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/track/click/[token]/route.ts": {
+    "mtime": 1794411235.1421046,
+    "seen": 1794412674.834156,
+    "ast_hash": "daa5448a260e98ead4c2ab603f32b37d",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/track/open/[token]/route.ts": {
+    "mtime": 1794411235.1428723,
+    "seen": 1794412674.834157,
+    "ast_hash": "38e9330aed8ab0065f4b8c9c4bc84007",
+    "semantic_hash": ""
+  },
+  "painel/src/app/api/unsubscribe/[token]/route.ts": {
+    "mtime": 1794411235.1434314,
+    "seen": 1794412674.834157,
+    "ast_hash": "16afe0b102593eec365ba0c10e4b87e5",
+    "semantic_hash": ""
+  },
+  "painel/src/app/campanhas/BotaoDisparar.tsx": {
+    "mtime": 1794411235.1374846,
+    "seen": 1794412674.8341582,
+    "ast_hash": "64f511c59516584a1924d1d889111444",
+    "semantic_hash": ""
+  },
+  "painel/src/app/campanhas/FormNovaCampanha.tsx": {
+    "mtime": 1794411235.1368043,
+    "seen": 1794412674.8341591,
+    "ast_hash": "b0b8808b934cb1a38ff4afa17c9b5fb7",
+    "semantic_hash": ""
+  },
+  "painel/src/app/campanhas/nova/page.tsx": {
+    "mtime": 1794411235.1364994,
+    "seen": 1794412674.8341591,
+    "ast_hash": "840a958b9bfb639da274948e8252434c",
+    "semantic_hash": ""
+  },
+  "painel/src/app/campanhas/page.tsx": {
+    "mtime": 1794411235.137081,
+    "seen": 1794412674.83416,
+    "ast_hash": "f1efed9b7341036fd96d2ef01099738e",
+    "semantic_hash": ""
+  },
+  "painel/src/app/configuracoes/page.tsx": {
+    "mtime": 1794411235.1501877,
+    "seen": 1794412674.8341608,
+    "ast_hash": "2894659bebad07823cc95ad42bd490b0",
+    "semantic_hash": ""
+  },
+  "painel/src/app/docuemtacao/page.tsx": {
+    "mtime": 1794411235.1492307,
+    "seen": 1794412674.8341608,
+    "ast_hash": "5ad31be164a539964b69d0493ea85865",
+    "semantic_hash": ""
+  },
+  "painel/src/app/documentacao/DocumentacaoView.tsx": {
+    "mtime": 1794411235.1385317,
+    "seen": 1794412674.834162,
+    "ast_hash": "670901ccddb1153a1e1232020b99dcdd",
+    "semantic_hash": ""
+  },
+  "painel/src/app/documentacao/ia/page.tsx": {
+    "mtime": 1794411235.138141,
+    "seen": 1794412674.834163,
+    "ast_hash": "c25f31a2a028b37c9649615860b32df5",
+    "semantic_hash": ""
+  },
+  "painel/src/app/documentacao/page.tsx": {
+    "mtime": 1794411235.1388447,
+    "seen": 1794412674.834163,
+    "ast_hash": "850085107a852a9df60a8eba49881dfe",
+    "semantic_hash": ""
+  },
+  "painel/src/app/inscritos/BotaoSincronizar.tsx": {
+    "mtime": 1794411235.1342022,
+    "seen": 1794412674.834164,
+    "ast_hash": "efadc285ae7296dda36f446ee23544cf",
+    "semantic_hash": ""
+  },
+  "painel/src/app/inscritos/page.tsx": {
+    "mtime": 1794411235.1345139,
+    "seen": 1794412674.834164,
+    "ast_hash": "017e5b59e117d7375f65a5a00bf89957",
+    "semantic_hash": ""
+  },
+  "painel/src/app/layout.tsx": {
+    "mtime": 1794411949.9429185,
+    "seen": 1794412674.834165,
+    "ast_hash": "86cc36c89193f3aa2927eb67ee3a721d",
+    "semantic_hash": ""
+  },
+  "painel/src/app/lead/[id]/BotaoEnriquecerBI.tsx": {
+    "mtime": 1794411235.1394145,
+    "seen": 1794412674.834166,
+    "ast_hash": "b1b8ac9f69364a48a77b9acc4b5fcb38",
+    "semantic_hash": ""
+  },
+  "painel/src/app/lead/[id]/ScriptsAbordagem.tsx": {
+    "mtime": 1794411235.140056,
+    "seen": 1794412674.834166,
+    "ast_hash": "9b9d262fcad4479fc586e3017fbf5510",
+    "semantic_hash": ""
+  },
+  "painel/src/app/lead/[id]/page.tsx": {
+    "mtime": 1794411235.139744,
+    "seen": 1794412674.834167,
+    "ast_hash": "f341f5e4719352c18ea7cb792de164c8",
+    "semantic_hash": ""
+  },
+  "painel/src/app/maps-scraper/GoogleMapsScraperView.tsx": {
+    "mtime": 1794411235.14076,
+    "seen": 1794412674.834168,
+    "ast_hash": "3496622f1658aa0f088d2103a8290aa7",
+    "semantic_hash": ""
+  },
+  "painel/src/app/maps-scraper/page.tsx": {
+    "mtime": 1794411235.1409686,
+    "seen": 1794412674.834168,
+    "ast_hash": "9f543bea59e05c70696e25f9eac10a72",
+    "semantic_hash": ""
+  },
+  "painel/src/app/mensagens/page.tsx": {
+    "mtime": 1794411235.1354358,
+    "seen": 1794412674.8341691,
+    "ast_hash": "bebf75612ff4ea9b2e549358945fffb7",
+    "semantic_hash": ""
+  },
+  "painel/src/app/page.tsx": {
+    "mtime": 1794411235.149428,
+    "seen": 1794412674.83417,
+    "ast_hash": "d80f757dd8967dc908d20b4ad045746f",
+    "semantic_hash": ""
+  },
+  "painel/src/app/provedores/page.tsx": {
+    "mtime": 1794411235.1349776,
+    "seen": 1794412674.8341708,
+    "ast_hash": "a017d1228964b08d1392ef76390737c7",
+    "semantic_hash": ""
+  },
+  "painel/src/app/templates/page.tsx": {
+    "mtime": 1794411235.1488652,
+    "seen": 1794412674.8341708,
+    "ast_hash": "1a523ff95094a71bbac0fddb4b61e922",
+    "semantic_hash": ""
+  },
+  "painel/src/app/usage/page.tsx": {
+    "mtime": 1794411235.1358914,
+    "seen": 1794412674.834172,
+    "ast_hash": "a017d1228964b08d1392ef76390737c7",
+    "semantic_hash": ""
+  },
+  "painel/src/components/CardTemplateComPreview.tsx": {
+    "mtime": 1794411235.1531878,
+    "seen": 1794412674.834173,
+    "ast_hash": "71d92648b5f7b47d98762d855868a685",
+    "semantic_hash": ""
+  },
+  "painel/src/components/CommandPaletteModal.tsx": {
+    "mtime": 1794411235.1506968,
+    "seen": 1794412674.834173,
+    "ast_hash": "60d8a81bf2a870504d0e2f236d7e51a7",
+    "semantic_hash": ""
+  },
+  "painel/src/components/DemoIntroOverlay.tsx": {
+    "mtime": 1794411802.6081696,
+    "seen": 1794412674.834174,
+    "ast_hash": "b4a6a90cbee84539b2a4dd85a06e358c",
+    "semantic_hash": ""
+  },
+  "painel/src/components/DesktopTopBar.tsx": {
+    "mtime": 1794411976.7532706,
+    "seen": 1794412674.834174,
+    "ast_hash": "557d400e77136bcca1e589fa70747f3d",
+    "semantic_hash": ""
+  },
+  "painel/src/components/DocumentacaoIaView.tsx": {
+    "mtime": 1794411235.1552253,
+    "seen": 1794412674.8341749,
+    "ast_hash": "3641768865de6523647628eadd8e8983",
+    "semantic_hash": ""
+  },
+  "painel/src/components/FiltroLeads.tsx": {
+    "mtime": 1794411235.1525445,
+    "seen": 1794412674.834176,
+    "ast_hash": "11adef127791e9b7087b40e9e9f36c67",
+    "semantic_hash": ""
+  },
+  "painel/src/components/LogoEmpresa.tsx": {
+    "mtime": 1794411235.1529686,
+    "seen": 1794412674.834176,
+    "ast_hash": "5447d5f37c990881899c6f36a159f9a3",
+    "semantic_hash": ""
+  },
+  "painel/src/components/McpOsBackgroundProvider.tsx": {
+    "mtime": 1794411235.1535144,
+    "seen": 1794412674.834177,
+    "ast_hash": "e1b7cf596ef83f9409d5b537a4277775",
+    "semantic_hash": ""
+  },
+  "painel/src/components/MobileNavigation.tsx": {
+    "mtime": 1794411235.1511075,
+    "seen": 1794412674.834178,
+    "ast_hash": "3260453844ab21571083c95bbfb6a2fc",
+    "semantic_hash": ""
+  },
+  "painel/src/components/ModalGoogleMapsScraper.tsx": {
+    "mtime": 1794411235.1514409,
+    "seen": 1794412674.834178,
+    "ast_hash": "5d76c07159c61178be8c1f6ecdc08448",
+    "semantic_hash": ""
+  },
+  "painel/src/components/ModalNovoScraper.tsx": {
+    "mtime": 1794411235.1517625,
+    "seen": 1794412674.8341792,
+    "ast_hash": "29007f44a5986adb884a99aa8e5a4201",
+    "semantic_hash": ""
+  },
+  "painel/src/components/PainelLeadsHeader.tsx": {
+    "mtime": 1794411235.152765,
+    "seen": 1794412674.8341792,
+    "ast_hash": "1e11b2cf7a37bf9f7b8966f3955b1517",
+    "semantic_hash": ""
+  },
+  "painel/src/components/RecursosUsageView.tsx": {
+    "mtime": 1794411235.154135,
+    "seen": 1794412674.83418,
+    "ast_hash": "6df6872350c3df35b0d4c8a387c0b420",
+    "semantic_hash": ""
+  },
+  "painel/src/components/SeloClasse.tsx": {
+    "mtime": 1794411235.1543925,
+    "seen": 1794412674.834181,
+    "ast_hash": "e27aa4550c9f42099e9fa6fa37c3ced9",
+    "semantic_hash": ""
+  },
+  "painel/src/components/Sidebar.tsx": {
+    "mtime": 1794411235.1547549,
+    "seen": 1794412674.834181,
+    "ast_hash": "1d87f0f328db10471f85675cb21ffd7b",
+    "semantic_hash": ""
+  },
+  "painel/src/components/SuperPoolBadge.tsx": {
+    "mtime": 1794411235.1523325,
+    "seen": 1794412674.8341818,
+    "ast_hash": "15063467ba28127d88bde115f3c2ad4b",
+    "semantic_hash": ""
+  },
+  "painel/src/components/TabelaLeadsComAcoes.tsx": {
+    "mtime": 1794411235.1520889,
+    "seen": 1794412674.834183,
+    "ast_hash": "cad2596b7163c0576a0d9e322526d477",
+    "semantic_hash": ""
+  },
+  "painel/src/components/WizardNovaCampanha.tsx": {
+    "mtime": 1794412008.3507283,
+    "seen": 1794412674.834183,
+    "ast_hash": "14b96d2e6184fa6d2eb4487c2671f0f8",
+    "semantic_hash": ""
+  },
+  "painel/src/components/ui.tsx": {
+    "mtime": 1794411235.15605,
+    "seen": 1794412674.834184,
+    "ast_hash": "f2a3d513b60825790cc7159b3e3751a6",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/db.ts": {
+    "mtime": 1794411235.1585917,
+    "seen": 1794412674.834185,
+    "ast_hash": "669d0912802989f9a004f0089cd19a88",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/fmt.ts": {
+    "mtime": 1794411235.1582396,
+    "seen": 1794412674.834185,
+    "ast_hash": "2d75e08f0b67a559de8a10e0fb31edde",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/gmaps-constants.ts": {
+    "mtime": 1794411235.1564689,
+    "seen": 1794412674.834186,
+    "ast_hash": "3cf21e130ef3535627bfce85951d4b5b",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/mock-data.ts": {
+    "mtime": 1794412520.5916176,
+    "seen": 1794412674.834187,
+    "ast_hash": "455323ec34dbdeef1270cb5543b47611",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/native.ts": {
+    "mtime": 1794411235.157378,
+    "seen": 1794412674.834187,
+    "ast_hash": "387d2a31c2c7ac8d45fa7d2ca6f2c2f5",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/prospeccao-types.ts": {
+    "mtime": 1794411235.157954,
+    "seen": 1794412674.834188,
+    "ast_hash": "e33d22b7bfe841a0b9c6268c81a1a86f",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/prospeccao.ts": {
+    "mtime": 1794411612.4367223,
+    "seen": 1794412674.834189,
+    "ast_hash": "21e7ef2eb2a185834367931f11201998",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/sendportal-types.ts": {
+    "mtime": 1794411235.156705,
+    "seen": 1794412674.834189,
+    "ast_hash": "4e0ea53d4f5e6ec939e0b733d2850068",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/sendportal.ts": {
+    "mtime": 1794411697.9246297,
+    "seen": 1794412674.8341901,
+    "ast_hash": "7cb9275fe32151c74717cd6218854870",
+    "semantic_hash": ""
+  },
+  "painel/src/lib/superpool.ts": {
+    "mtime": 1794411730.1791852,
+    "seen": 1794412674.834191,
+    "ast_hash": "ade3490e61b9b6a7ce1cb80e74ba369a",
+    "semantic_hash": ""
+  },
+  "painel/tsconfig.json": {
+    "mtime": 1794411235.1330173,
+    "seen": 1794412674.834191,
+    "ast_hash": "a80e217419a3d09938685afecdc2deb8",
+    "semantic_hash": ""
+  },
+  "prospectar.mjs": {
+    "mtime": 1794411234.8891957,
+    "seen": 1794412674.8341918,
+    "ast_hash": "5760d810f62f94cd9ad3dc7d52e128e0",
+    "semantic_hash": ""
+  },
+  "scripts/seed_master_templates.mjs": {
+    "mtime": 1794411235.0189128,
+    "seen": 1794412674.834193,
+    "ast_hash": "e1aab93aa2589d29b47847c99a339b7a",
+    "semantic_hash": ""
+  },
+  "test/bi_enrichment.test.mjs": {
+    "mtime": 1794411234.886168,
+    "seen": 1794412674.834193,
+    "ast_hash": "ae293a4d5ee991c1c65d807d7b8a3cdf",
+    "semantic_hash": ""
+  },
+  "test/canais_aquisicao.test.mjs": {
+    "mtime": 1794411234.886976,
+    "seen": 1794412674.834194,
+    "ast_hash": "2aca506d8a6ef55e1d2c7395ef787f6c",
+    "semantic_hash": ""
+  },
+  "test/e2e_integration.test.mjs": {
+    "mtime": 1794411234.8865829,
+    "seen": 1794412674.834194,
+    "ast_hash": "79e5bf16cfe9260d284751e1cf8a4f3c",
+    "semantic_hash": ""
+  },
+  "test/mcp_os_webgl_parity.test.mjs": {
+    "mtime": 1794411234.8857093,
+    "seen": 1794412674.834195,
+    "ast_hash": "fd4ffaa48362694b8356735c5ce6ebf1",
+    "semantic_hash": ""
+  },
+  "test/mcp_server.test.mjs": {
+    "mtime": 1794411234.887682,
+    "seen": 1794412674.8341959,
+    "ast_hash": "7d6cbdc5bede39429e86934bc1704272",
+    "semantic_hash": ""
+  },
+  "test/places.test.mjs": {
+    "mtime": 1794411234.8873105,
+    "seen": 1794412674.8341959,
+    "ast_hash": "dae1130366ad16e4d683843a0b040473",
+    "semantic_hash": ""
+  },
+  "test/sendportal.test.mjs": {
+    "mtime": 1794411234.8881037,
+    "seen": 1794412674.834197,
+    "ast_hash": "fad761c305f26f001c192dc5af758f90",
+    "semantic_hash": ""
+  },
+  "test/superpool.test.mjs": {
+    "mtime": 1794411234.8851478,
+    "seen": 1794412674.834198,
+    "ast_hash": "f037fc7abd1d3b1258c62ed289525950",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1794411235.0285304,
+    "seen": 1794412674.834198,
+    "ast_hash": "867bda515df040bcd46c1aaa0b8695d7",
+    "semantic_hash": ""
+  },
+  "AI_AGENT_MANUAL.md": {
+    "mtime": 1794411235.018228,
+    "seen": 1794412674.834199,
+    "ast_hash": "96dfc21eb2139995259cd6f411374c80",
+    "semantic_hash": ""
+  },
+  "APRENDIZADOS.md": {
+    "mtime": 1794411234.8843005,
+    "seen": 1794412674.8342001,
+    "ast_hash": "13e66ee8d3ea417f8cf9912097811ef2",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1794411235.0526912,
+    "seen": 1794412674.8342001,
+    "ast_hash": "687dc83013b8f3f70a7474a446f4b2ce",
+    "semantic_hash": ""
+  },
+  "COMECE-AQUI.md": {
+    "mtime": 1794411235.01853,
+    "seen": 1794412674.834201,
+    "ast_hash": "f937d50a0578cb5c17fc900e3e659d7e",
+    "semantic_hash": ""
+  },
+  "GEMINI.md": {
+    "mtime": 1794411235.027826,
+    "seen": 1794412674.834202,
+    "ast_hash": "002534fa248f28a1f543d36b3f0b988a",
+    "semantic_hash": ""
+  },
+  "MEU-CLIENTE-IDEAL.md": {
+    "mtime": 1794411234.888559,
+    "seen": 1794412674.834202,
+    "ast_hash": "4afdb70808e50b3f48ec0891bd5e9cf8",
+    "semantic_hash": ""
+  },
+  "OPCOES.md": {
+    "mtime": 1794411235.0283053,
+    "seen": 1794412674.8342028,
+    "ast_hash": "6d98f987d1985bf5815a8e7f4c694ccf",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794412623.6169074,
+    "seen": 1794412674.834204,
+    "ast_hash": "8812816c1d0c7cce81c9fde22d20c72e",
+    "semantic_hash": ""
+  },
+  "docs/ENCICLOPEDIA_COLD_EMAIL_2026.md": {
+    "mtime": 1794411234.8926876,
+    "seen": 1794412674.834204,
+    "ast_hash": "ac954368b5dddf9a376f151f8f9c1f9e",
+    "semantic_hash": ""
+  },
+  "docs/a-regua-do-score.md": {
+    "mtime": 1794411234.8909762,
+    "seen": 1794412674.834205,
+    "ast_hash": "fb5d3f685c3606375ad1e043f3856cf0",
+    "semantic_hash": ""
+  },
+  "docs/o-filtro-de-nicho.md": {
+    "mtime": 1794411234.893731,
+    "seen": 1794412674.834205,
+    "ast_hash": "d3cf18786012e6340aa95293dbaa7503",
+    "semantic_hash": ""
+  },
+  "docs/o-painel.md": {
+    "mtime": 1794411234.893216,
+    "seen": 1794412674.8342059,
+    "ast_hash": "1646bd92d423d8c5b7296a7752fd4115",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-09-30-sistema-comercial-prospeccao-superpool.md": {
+    "mtime": 1794411234.8917556,
+    "seen": 1794412674.834207,
+    "ast_hash": "ea206c9c1efcd8cdfdab06431da0eb3d",
+    "semantic_hash": ""
+  },
+  "docs/por-que-regex-e-nao-ia.md": {
+    "mtime": 1794411234.8940966,
+    "seen": 1794412674.834207,
+    "ast_hash": "d87010ce090398494846bf1c3d806877",
+    "semantic_hash": ""
+  },
+  "docs/requisitos-e-tag-de-site.md": {
+    "mtime": 1794411234.894442,
+    "seen": 1794412674.834208,
+    "ast_hash": "2873f55addeb6d282f5212a87472a5d6",
+    "semantic_hash": ""
+  },
+  "painel/public/llms-full.txt": {
+    "mtime": 1794411235.130873,
+    "seen": 1794412674.834209,
+    "ast_hash": "9f3e817118d33e3d73a195fcd7ccf7e5",
+    "semantic_hash": ""
+  },
+  "painel/public/llms.txt": {
+    "mtime": 1794411235.0537226,
+    "seen": 1794412674.834209,
+    "ast_hash": "df946a09d75dd7f47715ada5fa627904",
+    "semantic_hash": ""
+  },
+  "android/app-icon.png": {
+    "mtime": 1794411235.0135055,
+    "seen": 1794412674.8342102,
+    "ast_hash": "4fec57f5dd8227c401e1e5dc6fae4092",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-hdpi/ic_launcher.png": {
+    "mtime": 1794411235.0067046,
+    "seen": 1794412674.834211,
+    "ast_hash": "bfa6d2f9f02bdbfcd1843a42b25eeb42",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-hdpi/ic_launcher_round.png": {
+    "mtime": 1794411235.0069587,
+    "seen": 1794412674.834211,
+    "ast_hash": "af17c491768eaac64cb66bf3da906fab",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-mdpi/ic_launcher.png": {
+    "mtime": 1794411235.0060337,
+    "seen": 1794412674.834212,
+    "ast_hash": "951aab3cd5d9cfd47be861939c0fdddf",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-mdpi/ic_launcher_round.png": {
+    "mtime": 1794411235.0062637,
+    "seen": 1794412674.834213,
+    "ast_hash": "db03b6e2a6ac971542e149c9bfd14264",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-xhdpi/ic_launcher.png": {
+    "mtime": 1794411235.0110042,
+    "seen": 1794412674.834213,
+    "ast_hash": "b943d503fe92681994c5d0931cf99e33",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-xhdpi/ic_launcher_round.png": {
+    "mtime": 1794411235.0113575,
+    "seen": 1794412674.834214,
+    "ast_hash": "61828d88d821c9b20e0726a79abff74a",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-xxhdpi/ic_launcher.png": {
+    "mtime": 1794411235.0086277,
+    "seen": 1794412674.834215,
+    "ast_hash": "b74abfc0ef0747b9b2fd32a822d217d0",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-xxhdpi/ic_launcher_round.png": {
+    "mtime": 1794411235.009207,
+    "seen": 1794412674.834215,
+    "ast_hash": "34e4870d595c88bc5944850ccf54ed65",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-xxxhdpi/ic_launcher.png": {
+    "mtime": 1794411235.0075762,
+    "seen": 1794412674.8342159,
+    "ast_hash": "e295058618c59fb1389cb443b37f19e5",
+    "semantic_hash": ""
+  },
+  "android/res/mipmap-xxxhdpi/ic_launcher_round.png": {
+    "mtime": 1794411235.007927,
+    "seen": 1794412674.8342159,
+    "ast_hash": "bc4c4fd1f03db5fdea169953e839f529",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/flowers/59da96db902a205e9f90e651a4bcaa72.jpg": {
+    "mtime": 1794411235.0600233,
+    "seen": 1794412674.834217,
+    "ast_hash": "e6e5c91b1b62c9d50bcdefbaf2a26bcb",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/flowers/797d233401eae1b36818abc988af10d4.jpg": {
+    "mtime": 1794411235.060425,
+    "seen": 1794412674.834218,
+    "ast_hash": "f017e2620926ed884227fa62b7309e48",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/flowers/7f15501be01e3225966e2ab7fe1b735a.jpg": {
+    "mtime": 1794411235.0612428,
+    "seen": 1794412674.834219,
+    "ast_hash": "76d0fd60241c3ea6a5ffd03e8e1b2211",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/flowers/8e7943acb3073ec2e112542af9fcc2c6.jpg": {
+    "mtime": 1794411235.060783,
+    "seen": 1794412674.834219,
+    "ast_hash": "39ba2b4e2608f5e544bb9e7e61cbe8d4",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/flowers/a7a3a081d906882bcf9068afc3894eee.jpg": {
+    "mtime": 1794411235.0583215,
+    "seen": 1794412674.83422,
+    "ast_hash": "5c8b31cda3fe1486923ed9e8f326225f",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/flowers/b268e4783280047be44e09f1fca7dec6.jpg": {
+    "mtime": 1794411235.0596051,
+    "seen": 1794412674.83422,
+    "ast_hash": "fbf03ea8d2333e6427f7f1130b998038",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/flowers/beb4c6ac11f067d61799142fe1a6e27d.jpg": {
+    "mtime": 1794411235.0576277,
+    "seen": 1794412674.8342211,
+    "ast_hash": "09de979f22abc124ac43ce932390335e",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/flowers/e55174e6ec437489913f134318952c1e.jpg": {
+    "mtime": 1794411235.0587044,
+    "seen": 1794412674.834222,
+    "ast_hash": "0446a3843bd69d8331b806c272f85658",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/012f4996731b766a5f6fce9ae5fa16a0.jpg": {
+    "mtime": 1794411235.0798042,
+    "seen": 1794412674.834223,
+    "ast_hash": "d40638047b8be6f07e57bc206746351b",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/04747ba8c86d370f14b19aff88c73f77.jpg": {
+    "mtime": 1794411235.0743804,
+    "seen": 1794412674.834223,
+    "ast_hash": "0624f7d996991632f2b437a1fc9e2117",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/1-20260505_170907.jpg": {
+    "mtime": 1794411235.1184337,
+    "seen": 1794412674.8342242,
+    "ast_hash": "96fa771560d9dc7e85fa76fbbf866b64",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/2-20260327_135337.jpg": {
+    "mtime": 1794411235.0793762,
+    "seen": 1794412674.834225,
+    "ast_hash": "b98a4130ea7d9b39f3848630a2d067e2",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/3-20260313_123924.jpg": {
+    "mtime": 1794411235.077281,
+    "seen": 1794412674.834226,
+    "ast_hash": "df3ddcf1e3170955d47825bbd11fd76e",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/416bb19b1eefa7c850b4db3cb09bac12_copia.jpg": {
+    "mtime": 1794411235.0801737,
+    "seen": 1794412674.8342268,
+    "ast_hash": "a45ef7b611a466dca3d6dfd8fbe8c3c6",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/4567a6460e49dca509404aa4031c11d2.jpg": {
+    "mtime": 1794411235.082271,
+    "seen": 1794412674.8342268,
+    "ast_hash": "03bf86a139a8181c371e30c493f55f7c",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/9811449c83f06fc824d7a95f235d376e_copia.jpg": {
+    "mtime": 1794411235.0807061,
+    "seen": 1794412674.834228,
+    "ast_hash": "b6aaad1e8da08169d0eb9aa850ab40d7",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/b3668afb13ab00288ff06c9d72453d19.jpg": {
+    "mtime": 1794411235.083397,
+    "seen": 1794412674.834229,
+    "ast_hash": "1ae4a0b1712002ffe2826c377a27107a",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/c6081876648f7ce1a6e4734daa79e7d4.jpg": {
+    "mtime": 1794411235.0816016,
+    "seen": 1794412674.834229,
+    "ast_hash": "685360dcaf89cd839ba5efd44a7f256c",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/e5ef0ddde9b00540cdf18e4b226e0bee.jpg": {
+    "mtime": 1794411235.0777884,
+    "seen": 1794412674.83423,
+    "ast_hash": "6ac599c5eeed073555246f67450631f1",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/eca2c6f16007ec99ca3c5058876b2af6.jpg": {
+    "mtime": 1794411235.0751045,
+    "seen": 1794412674.8342311,
+    "ast_hash": "79254e53b2931f22fac5cbf94c384b7b",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/f4fcf6bb7808351828fbd6ed76cba496.jpg": {
+    "mtime": 1794411235.0830266,
+    "seen": 1794412674.8342311,
+    "ast_hash": "3ce728794e6f6344bd4c6edfdfb3495a",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/gym/onboarding.jpg": {
+    "mtime": 1794411235.0826423,
+    "seen": 1794412674.834232,
+    "ast_hash": "b6aaad1e8da08169d0eb9aa850ab40d7",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/1000427297.jpg": {
+    "mtime": 1794411235.1193576,
+    "seen": 1794412674.834232,
+    "ast_hash": "84df3ec5b7c5193ae91d89b9a8277350",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/1000427303.jpg": {
+    "mtime": 1794411235.1280465,
+    "seen": 1794412674.834233,
+    "ast_hash": "65b789eedeaa13f83f942bd4e79e0986",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/1000427312.jpg": {
+    "mtime": 1794411235.1305304,
+    "seen": 1794412674.834234,
+    "ast_hash": "bf4ece33adce8e47a7b50b813f2a5c03",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/img_8287.jpeg": {
+    "mtime": 1794411235.1224034,
+    "seen": 1794412674.834234,
+    "ast_hash": "f1ea1aa00c2acc5bf32cf18c38eea8ba",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/img_9915.jpeg": {
+    "mtime": 1794411235.1300335,
+    "seen": 1794412674.834235,
+    "ast_hash": "cdf35ca8c0016064b3addc613a6178cc",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/projetounohome_20260613_155750_319.jpg": {
+    "mtime": 1794411235.1263797,
+    "seen": 1794412674.834236,
+    "ast_hash": "2588bf66202ae5ef95cab8b5efd80a82",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/projetounohome_20260613_155802_757.jpg": {
+    "mtime": 1794411235.12968,
+    "seen": 1794412674.834236,
+    "ast_hash": "5e4fb7e592499f1fe93ec9de103022b4",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/projetounohome_20260613_155833_559.jpg": {
+    "mtime": 1794411235.1252916,
+    "seen": 1794412674.8342369,
+    "ast_hash": "ecc61b67ac5a0c8638f6d44d1f60cedd",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/projetounohome_20260613_155903_814.jpg": {
+    "mtime": 1794411235.127349,
+    "seen": 1794412674.834238,
+    "ast_hash": "178e989ba65268d3624f9e3c1df696ad",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/projetounohome_20260613_171838_541.jpg": {
+    "mtime": 1794411235.1231349,
+    "seen": 1794412674.834238,
+    "ast_hash": "df0b0ab78c57d82ee1bb381ce2f59cd9",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/vaideuno_20260613_155457_985.jpg": {
+    "mtime": 1794411235.1292906,
+    "seen": 1794412674.834239,
+    "ast_hash": "1b8b968b01de4e92fdf03f693fbc89e2",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/vaideuno_20260613_155513_639.jpg": {
+    "mtime": 1794411235.1258616,
+    "seen": 1794412674.834239,
+    "ast_hash": "c27a8fe28564de5103e3b6f44adef6af",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/vaideuno_20260613_170029_918.jpg": {
+    "mtime": 1794411235.121371,
+    "seen": 1794412674.83424,
+    "ast_hash": "69c43cd0f6bcdd9315c74deb29a8dd70",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/vaideuno_20260613_171916_766.jpg": {
+    "mtime": 1794411235.123983,
+    "seen": 1794412674.834241,
+    "ast_hash": "ee97e12b79e0163e1bd98b8725857994",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/welitonofc001-20260222-0004.jpg": {
+    "mtime": 1794411235.1286023,
+    "seen": 1794412674.834241,
+    "ast_hash": "6d328ce372d6f71c93272c0081664d95",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/welitonofc001-20260222-0049.jpg": {
+    "mtime": 1794411235.1268547,
+    "seen": 1794412674.834242,
+    "ast_hash": "425702a19d57543edae2342f2510a532",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/motivation/welitonofc001-20260222-0097.jpg": {
+    "mtime": 1794411235.1244502,
+    "seen": 1794412674.834243,
+    "ast_hash": "00a63d7c22a95beeab46f0500aa8f35a",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/red/08c3aa3a5c3631b23cec57233f5c365c.jpg": {
+    "mtime": 1794411235.0642357,
+    "seen": 1794412674.834243,
+    "ast_hash": "1e3360d2cf823b8cbd3b217081fac6fd",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/red/465148a473500d0bf6c3b9c83b98ec92.jpg": {
+    "mtime": 1794411235.0634162,
+    "seen": 1794412674.834244,
+    "ast_hash": "05c32b5510d4122e214bc50a7eabd9cc",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/red/6c5d14bcb2f0390ee694119aa6704655.jpg": {
+    "mtime": 1794411235.0639167,
+    "seen": 1794412674.8342452,
+    "ast_hash": "52fbc61e377f3421a9af05970858f411",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/red/7361af8ac2d01d02c9752f89b3365d47.jpg": {
+    "mtime": 1794411235.0629547,
+    "seen": 1794412674.8342452,
+    "ast_hash": "7fa0fb106a303a6842a06522173c5c93",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/red/963a4bd9af77842586e2b4cdd53eb931.jpg": {
+    "mtime": 1794411235.062277,
+    "seen": 1794412674.834246,
+    "ast_hash": "c902b4ab13059e0770c276fbf0b81b74",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/red/f8247f7bffb7269d9e3b2310844b330d.jpg": {
+    "mtime": 1794411235.0618403,
+    "seen": 1794412674.834246,
+    "ast_hash": "78148ccada0ab5cb7f46fbb600dbdb1c",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/red/fb71f9cd02c7e3f7e41589d90f6fdaa8.jpg": {
+    "mtime": 1794411235.0647564,
+    "seen": 1794412674.8342469,
+    "ast_hash": "710a5eaaf2e02e7568e4ab0f8b08f9ad",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/05f22143098023a6978520a73a77637e.jpg": {
+    "mtime": 1794411235.0724576,
+    "seen": 1794412674.8342478,
+    "ast_hash": "53c2406238633fa74047f1d0169c61bb",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/142622f0d35efbffebc9b8a7995168dd.jpg": {
+    "mtime": 1794411235.0733192,
+    "seen": 1794412674.8342478,
+    "ast_hash": "0fd7d9ca27885a138251f2f7ff2d71b8",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/37c572ab0404204cb6f367c2a9f78a54.jpg": {
+    "mtime": 1794411235.0699735,
+    "seen": 1794412674.834249,
+    "ast_hash": "2141d077c4dda47066f387cd9d37b0e7",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/3e3b1728d96b733b8f3bbf418021dd42.jpg": {
+    "mtime": 1794411235.0671332,
+    "seen": 1794412674.83425,
+    "ast_hash": "6ec63469b230ff49e98f96c1c5433422",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/69b55c9be40f117fd5f076d27334d2cf.jpg": {
+    "mtime": 1794411235.0675144,
+    "seen": 1794412674.83425,
+    "ast_hash": "1b2bedba9fca41b82423194016e2032c",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/6e86f5937cb8ef54593b94952a59d5a1.jpg": {
+    "mtime": 1794411235.0667295,
+    "seen": 1794412674.834251,
+    "ast_hash": "c71f794c7ba11c65b2cb89904d8fb9d6",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/71acf6cb2cad2c986df87d817a06c33b.jpg": {
+    "mtime": 1794411235.0656254,
+    "seen": 1794412674.834252,
+    "ast_hash": "506e8643706a8d5645167957ac4036d3",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/72859fb9ef398cd2a69777dc26d7d1d2.jpg": {
+    "mtime": 1794411235.0694628,
+    "seen": 1794412674.834252,
+    "ast_hash": "99c95432f9e534118023fb08b3a289f2",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/73ba35d0e4557dacaeb9ffaab42cd635.jpg": {
+    "mtime": 1794411235.0705492,
+    "seen": 1794412674.834253,
+    "ast_hash": "c379bceb360c63832ee63b6fd4233ae9",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/747c0ca848cc44632e4c94436348fe07.jpg": {
+    "mtime": 1794411235.0712788,
+    "seen": 1794412674.834254,
+    "ast_hash": "0dfc169b770f264ec764b5077b1a122f",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/7b78f45b8a8f62b1cb9c7477d0b83f63.jpg": {
+    "mtime": 1794411235.068911,
+    "seen": 1794412674.834254,
+    "ast_hash": "8544d787586e7c2d5bd57a336547ebf4",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/800c456fafbe63fae067663194fe47e9.jpg": {
+    "mtime": 1794411235.070885,
+    "seen": 1794412674.8342552,
+    "ast_hash": "9d00e84e0cefa39f5da7321637d5e575",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/8f432d4e77f909f3abccb186f47ffff3.jpg": {
+    "mtime": 1794411235.071573,
+    "seen": 1794412674.834256,
+    "ast_hash": "a463a5680213c777ec803cf1855d2434",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/b1cd9d06a79b40e08ff9b945cd051aab.jpg": {
+    "mtime": 1794411235.0682743,
+    "seen": 1794412674.834256,
+    "ast_hash": "1bb8594f27ff27c20f9e00b06357aa73",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/b26f28a14964906204ec288ddf524432.jpg": {
+    "mtime": 1794411235.0679061,
+    "seen": 1794412674.834257,
+    "ast_hash": "cd908cf348c32672cdd7d3f689a855a2",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/bbf00645951aa952366c3a446a07c990.jpg": {
+    "mtime": 1794411235.0728717,
+    "seen": 1794412674.8342578,
+    "ast_hash": "c323e62726ec2a5a5c12b12d723ab191",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/c4058aae27b4310eb2c979cf9f6a817d.jpg": {
+    "mtime": 1794411235.0662956,
+    "seen": 1794412674.8342578,
+    "ast_hash": "38327046c79955967a19cd1ac1077a61",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/e82d7e3487abb787a3398210d02801c8.jpg": {
+    "mtime": 1794411235.0737774,
+    "seen": 1794412674.834259,
+    "ast_hash": "ba1883b512750be212c7527a0c491653",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/f24ac251210bc82b90f9c33ce2438194.jpg": {
+    "mtime": 1794411235.071949,
+    "seen": 1794412674.834259,
+    "ast_hash": "799f13979544abeb36bdd801be7b7ce5",
+    "semantic_hash": ""
+  },
+  "painel/public/images/wallpapers/soft/f9f930471adfb299ae9ad2f9b319421b.jpg": {
+    "mtime": 1794411235.0685768,
+    "seen": 1794412674.83426,
+    "ast_hash": "89ffd169d25f1b8f707b476ca1082c9d",
+    "semantic_hash": ""
+  }
+}

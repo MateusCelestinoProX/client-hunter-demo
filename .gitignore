@@ -1,0 +1,16 @@
+.env.local
+.env
+!.env.exemplo
+!.env.example
+node_modules/
+*.db
+*.db*
+saidas/*.csv
+saidas/*.db*
+graphify-out/cache/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+android/build/
+android/dist/*-aligned.apk
+android/dist/*.idsig

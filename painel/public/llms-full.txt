@@ -1,0 +1,340 @@
+# CLIENT HUNTER PRO — PROTOCOLO DE AUTOMAÇÃO COMPLETO PARA AGENTES DE IA (v2.0.0)
+
+Este documento é a especificação técnica integral da plataforma Client Hunter para consumo autônomo por Agentes de Inteligência Artificial (Google Antigravity, Claude Code, Cursor, OpenAI Agents, LangChain, CrewAI e N8N).
+
+---
+
+## 1. ARQUITETURA GERAL & INTERAÇÃO MACHINE-TO-MACHINE
+
+A plataforma Client Hunter é composta por:
+1. **Core Backend (Node.js ESM):** Localizado na raiz do projeto (`lib/`, `mcp/`, `motores/`).
+2. **Servidor MCP Stdio (`mcp/leadpulse-mcp.mjs`):** Protocolo JSON-RPC 2.0 padrão para agentes locais via pipe stdin/stdout.
+3. **Painel Web & API Gateway (Next.js 16 App Router):** Localizado em `painel/`, servindo a interface gráfica e endpoints REST sob `/api/*`.
+4. **Banco de Dados Relacional Local (SQLite 3):** Localizado em `data/prospeccao.db`, acessado com `better-sqlite3` para persistência de alta performance e deduplicação idempotente.
+5. **SuperPool de Infraestrutura:** 58 API Keys com balanceamento dinâmico e fallback automático:
+   - 13 contas Apify (Scrapers de Google Maps, Instagram, LinkedIn, SERP e Meta Ad Library)
+   - 9 contas Exa AI (Busca Semântica Neural e Mapeamento Competitivo)
+   - Firecrawl API (Extração e auditoria profunda de sites corporativos)
+   - Resend API (Disparo de Cold E-mail de alta entregabilidade com DKIM/SPF)
+
+---
+
+## 2. CONFIGURAÇÃO DO SERVIDOR MCP (STDIO JSON-RPC 2.0)
+
+O servidor MCP expõe 24 ferramentas para agentes de IA. Ele roda nativamente em Node.js sem necessidade de serviços externos.
+
+### Configuração no Google Antigravity / Claude Desktop / Cursor
+Para conectar seu assistente ao Client Hunter, adicione o seguinte trecho à configuração MCP (`claude_desktop_config.json` ou `mcp_servers`):
+
+```json
+{
+  "mcpServers": {
+    "client-hunter": {
+      "command": "node",
+      "args": [
+        "/caminho/absoluto/client-hunter/mcp/leadpulse-mcp.mjs"
+      ],
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
+```
+
+---
+
+## 3. CATÁLOGO COMPLETO DE FERRAMENTAS MCP (TOOLS SCHEMA)
+
+### 3.1 Mineração e Captação Multi-Canal
+
+#### `leadpulse_coletar_leads`
+Orquestra a coleta multi-canal de leads com gravação idempotente no banco local.
+- **Argumentos:**
+  - `canal` (string, enum: `["maps", "linkedin", "instagram", "web"]`, default: `"maps"`): Canal de coleta.
+  - `nicho` (string, obrigatório): Nicho comercial (ex: `"energia-solar"`, `"clinicas-estetica"`).
+  - `praca` (string, obrigatório): Cidade e estado alvo (ex: `"Campinas SP"`, `"Belo Horizonte MG"`).
+  - `limite` (number, default: `10`): Meta de leads a captar.
+- **Exemplo de Chamada:**
+  ```json
+  {
+    "name": "leadpulse_coletar_leads",
+    "arguments": {
+      "canal": "maps",
+      "nicho": "clinicas-odontologicas",
+      "praca": "Curitiba PR",
+      "limite": 15
+    }
+  }
+  ```
+
+#### `leadpulse_buscar_empresas`
+Busca empresas diretamente no Google Maps.
+- **Argumentos:**
+  - `query` (string, obrigatório): Termo de busca (ex: `"energia solar em Ribeirão Preto SP"`).
+  - `limite` (number, default: `10`): Quantidade máxima.
+  - `motor` (string, enum: `["botasaurus", "superpool", "google", "apify"]`, default: `"superpool"`).
+
+#### `leadpulse_buscar_linkedin`
+Capta páginas corporativas e tomadores de decisão (CEOs, Sócios, Diretores) no LinkedIn via Google SERP dorking no SuperPool.
+- **Argumentos:**
+  - `nicho` (string, obrigatório): Nicho do negócio.
+  - `praca` (string, obrigatório): Cidade/UF.
+  - `limite` (number, default: `10`).
+  - `tipo` (string, enum: `["empresas", "decisores", "ambos"]`, default: `"empresas"`).
+
+#### `leadpulse_buscar_instagram_leads`
+Capta perfis comerciais no Instagram com telefone/WhatsApp divulgado na bio.
+- **Argumentos:**
+  - `nicho` (string, obrigatório): Segmento.
+  - `praca` (string, obrigatório): Praça.
+  - `limite` (number, default: `10`).
+
+#### `leadpulse_buscar_web_leads`
+Pesquisa portais corporativos B2B na web combinando SERP, Exa Neural Search e Firecrawl.
+- **Argumentos:**
+  - `nicho` (string, obrigatório).
+  - `praca` (string, obrigatório).
+  - `limite` (number, default: `10`).
+
+#### `leadpulse_pesquisa_google`
+Executa consultas SERP diretas no Google através do pool do Apify.
+- **Argumentos:**
+  - `query` (string, obrigatório): String de busca.
+  - `maxResults` (number, default: `10`).
+
+#### `leadpulse_busca_neural_exa`
+Executa busca semântica conceitual com Exa AI.
+- **Argumentos:**
+  - `query` (string, obrigatório): Descrição ou conceito.
+  - `numResults` (number, default: `5`).
+
+#### `leadpulse_raspar_instagram`
+Raspa métricas e posts de perfis no Instagram.
+- **Argumentos:**
+  - `usernames` (array de strings, obrigatório): Nomes de usuário (sem `@`).
+
+#### `leadpulse_consultar_anuncios`
+Audita se empresas possuem anúncios ativos no Meta Ad Library.
+- **Argumentos:**
+  - `nomes_empresas` (array de strings, obrigatório): Nomes das empresas.
+
+---
+
+### 3.2 Enriquecimento e Business Intelligence Forense
+
+#### `leadpulse_enriquecer_site`
+Audita um site corporativo, extrai e-mails, telefones, links de WhatsApp, redes sociais e pixels de rastreamento.
+- **Argumentos:**
+  - `url` (string, obrigatório): URL do site.
+
+#### `leadpulse_enriquecer_bi`
+Executa a Etapa 2 de Business Intelligence: detecta stack de tecnologia (CMS, CRM, analytics), busca sócios e decisores no LinkedIn e gera dossiê de abordagem.
+- **Argumentos:**
+  - `lead_id` (string, obrigatório): ID do lead no banco (ex: `"maps:ChIJ...""`, `"web:..."`).
+  - `forcar` (boolean, default: `false`): Forçar re-execução.
+
+#### `leadpulse_enriquecer_lote_bi`
+Enriquece em lote os melhores leads pendentes no banco.
+- **Argumentos:**
+  - `nicho` (string, opcional): Filtrar por nicho.
+  - `limite` (number, default: `5`): Quantidade a processar.
+  - `forcar` (boolean, default: `false`).
+
+#### `leadpulse_consultar_bi_dossier`
+Recupera os dados completos de inteligência e dossiê já gerados para um lead.
+- **Argumentos:**
+  - `lead_id` (string, obrigatório): ID do lead.
+
+#### `leadpulse_buscar_decisores_linkedin`
+Busca direta de decisores corporativos de uma empresa específica.
+- **Argumentos:**
+  - `empresa` (string, obrigatório): Nome da empresa.
+  - `praca` (string, opcional): Cidade/Região.
+
+---
+
+### 3.3 Motor de Cold Outreach & SendPortal
+
+#### `leadpulse_sendportal_sincronizar_leads`
+Importa leads qualificados da tabela `leads` para a tabela `inscritos` com tags dinâmicas.
+- **Argumentos:**
+  - `nicho` (string, opcional).
+  - `classe` (string, enum: `["A", "B", "C", "D"]`, opcional).
+  - `canal` (string, enum: `["maps", "linkedin", "instagram", "web"]`, opcional).
+
+#### `leadpulse_sendportal_listar_campanhas`
+Lista campanhas criadas com métricas de entrega, abertura e cliques.
+- Sem argumentos.
+
+#### `leadpulse_sendportal_listar_templates`
+Lista modelos HTML de e-mail cadastrados.
+- Sem argumentos.
+
+#### `leadpulse_sendportal_salvar_template`
+Cadastra ou atualiza um template de e-mail.
+- **Argumentos:**
+  - `id` (string, opcional para novo).
+  - `nome` (string, obrigatório).
+  - `assunto_padrao` (string, opcional).
+  - `conteudo_html` (string, obrigatório): Aceita tags como `{{first_name}}`, `{{company}}`.
+  - `conteudo_texto` (string, opcional).
+
+#### `leadpulse_sendportal_criar_campanha`
+Cria uma campanha no SendPortal.
+- **Argumentos:**
+  - `nome` (string, obrigatório).
+  - `assunto` (string, obrigatório).
+  - `template_id` (string, opcional).
+  - `tag_alvo` (string, opcional).
+  - `leads_ids` (array de strings, opcional).
+  - `remetente_nome` (string, default: `"Client Hunter Outreach"`).
+  - `remetente_email` (string, default: `"prospeccao@resend.dev"`).
+
+#### `leadpulse_sendportal_disparar_campanha`
+Executa o disparo da campanha via SuperPool Resend com rastreamento ativo de cliques e aberturas.
+- **Argumentos:**
+  - `campanha_id` (string, obrigatório).
+  - `teste_email` (string, opcional): Se informado, envia somente para este e-mail.
+
+#### `leadpulse_sendportal_enviar_email_rapido`
+Dispara um e-mail comercial individual e instantâneo para um lead.
+- **Argumentos:**
+  - `lead_id` (string, opcional).
+  - `email` (string, opcional se lead_id fornecido).
+  - `assunto` (string, opcional).
+  - `template_id` (string, default: `"tpl_cold_outreach_b2b"`).
+  - `conteudo_html` (string, opcional).
+
+#### `leadpulse_sendportal_listar_mensagens`
+Consulta logs individuais de entrega.
+- **Argumentos:**
+  - `campanha_id` (string, opcional).
+  - `status` (string, opcional).
+  - `limite` (number, default: `20`).
+
+#### `leadpulse_sendportal_feed_atividades`
+Retorna feed em tempo real de aberturas e cliques recentes.
+- **Argumentos:**
+  - `limite` (number, default: `20`).
+
+---
+
+### 3.4 Telemetria de Infraestrutura
+
+#### `leadpulse_superpool_status`
+Retorna contagem de chaves ativas, tokens consumidos e balanceamento de carga entre contas Apify, Exa e Resend.
+
+---
+
+## 4. ESPECIFICAÇÃO DE ENDPOINTS HTTP REST
+
+A API REST do Client Hunter roda sob o endereço base:
+`https://instance-20260907-0637.tail798a9b.ts.net:3333` (ou `http://127.0.0.1:3333` em localhost).
+
+### 4.1 Iniciar Mineração Multi-Canal
+- **Rota:** `POST /api/prospeccao/captar`
+- **Headers:** `Content-Type: application/json`
+- **Payload:**
+  ```json
+  {
+    "canal": "maps",
+    "nicho": "energia-solar",
+    "praca": "Campinas SP",
+    "limite": 10,
+    "enriquecer": true,
+    "sincronizarSendportal": true,
+    "motorMaps": "superpool"
+  }
+  ```
+- **Retorno de Sucesso (200):**
+  ```json
+  {
+    "ok": true,
+    "mensagem": "Coleta concluída com sucesso.",
+    "totalColetados": 10,
+    "totalEnriquecidos": 8,
+    "nicho": "energia-solar",
+    "praca": "Campinas SP"
+  }
+  ```
+
+### 4.2 Listar Leads Qualificados (CRM)
+- **Rota:** `GET /api/prospeccao/leads`
+- **Query Params:**
+  - `nicho`: Filtra nicho exato.
+  - `classe`: `"A"`, `"B"`, `"C"`, `"D"`.
+  - `canal`: `"maps"`, `"linkedin"`, `"instagram"`, `"web"`.
+  - `site`: `"com-site"`, `"sem-site"`.
+  - `busca`: Termo de busca livre.
+  - `id`: Retorna lead individual.
+  - `resumo`: Se `"true"`, retorna apenas contagens métricas.
+- **Retorno:**
+  ```json
+  {
+    "ok": true,
+    "total": 45,
+    "resumo": { "total": 45, "classeA": 18, "comSite": 32, "comWhatsapp": 41 },
+    "leads": [ ... ]
+  }
+  ```
+
+### 4.3 Enriquecer Leads com Business Intelligence
+- **Rota:** `POST /api/prospeccao/enriquecer-bi`
+- **Payload:**
+  ```json
+  {
+    "lead_id": "maps:ChIJgUb9cqYE...",
+    "forcar": false
+  }
+  ```
+
+### 4.4 Disparo de E-mail Rápido 1-on-1
+- **Rota:** `POST /api/sendportal/email-rapido`
+- **Payload:**
+  ```json
+  {
+    "lead_id": "maps:ChIJgUb9cqYE...",
+    "assunto": "Parceria Estratégica em Energia Solar",
+    "template_id": "tpl_cold_outreach_b2b"
+  }
+  ```
+
+### 4.5 Telemetria de Provedores SuperPool
+- **Rota:** `GET /api/pool/resources`
+- **Retorno:**
+  ```json
+  {
+    "ok": true,
+    "apify": { "chaves_ativas": 13, "status": "operacional" },
+    "exa": { "chaves_ativas": 9, "status": "operacional" },
+    "resend": { "status": "operacional" }
+  }
+  ```
+
+---
+
+## 5. PLAYBOOKS DE OPERAÇÃO AUTÔNOMA PARA AGENTES DE IA
+
+### Playbook 1: Prospecção e Abordagem Autônoma de Ponta a Ponta
+1. Chamar `leadpulse_coletar_leads(canal="maps", nicho="clinicas-estetica", praca="Ribeirão Preto SP", limite=20)`.
+2. Chamar `leadpulse_enriquecer_lote_bi(nicho="clinicas-estetica", limite=10)`.
+3. Consultar os leads enriquecidos via `leadpulse_consultar_bi_dossier` para os leads Classe A.
+4. Chamar `leadpulse_sendportal_sincronizar_leads(nicho="clinicas-estetica", classe="A")`.
+5. Chamar `leadpulse_sendportal_criar_campanha(nome="Outreach Clínicas RP", assunto="Aceleração de Agendamentos", template_id="tpl_cold_outreach_b2b")`.
+6. Chamar `leadpulse_sendportal_disparar_campanha(campanha_id="...")`.
+7. Monitorar feed de atividades chamando `leadpulse_sendportal_feed_atividades` periodicamente.
+
+### Playbook 2: Caça a Empresas sem Site para Venda de Soluções Web
+1. Chamar endpoint `GET /api/prospeccao/leads?site=sem-site&nicho=energia-solar`.
+2. Para cada lead retornado que possua celular/WhatsApp:
+   - Preparar script de abordagem enfatizando perda de clientes no Google Maps.
+   - Enviar mensagem direta ou acionar e-mail institucional via `leadpulse_sendportal_enviar_email_rapido`.
+
+---
+
+## 6. SISTEMA DE RESILIÊNCIA E IDEMPOTÊNCIA
+
+- **Deduplicação de Leads:** Cada lead recebe um `id` canônico baseado no Place ID do Google Maps (`maps:ChIJ...`), URL canônica no LinkedIn (`linkedin:...`) ou domínio na Web (`web:empresa.com.br`). Inserções repetidas atualizam registros existentes sem duplicação de dados.
+- **Failover do SuperPool:** Se uma conta Apify ou Exa atingir a quota mensal, o módulo `lib/superpool.mjs` rotaciona automaticamente para a próxima chave saudável sem interromper a execução do agente.
+- **Segurança e LGPD:** Todos os e-mails disparados pelo SendPortal incluem cabeçalho `List-Unsubscribe` e link de descadastro automático funcional (`/api/unsubscribe/[token]`).
